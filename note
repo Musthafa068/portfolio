@@ -1,0 +1,5 @@
+media query :---- used to build responsive website.
+
+syntax of media query:- @media not|only mediatype and (media feature) and (media feature) {
+  CSS-Code;
+}

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url(https://wallpapercave.com/wp/wp9391700.jpg);
+
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-item{
+    width: 300px;
+    border: 1px solid;
+    margin: 10px;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: chocolate;
+    padding: 1.3rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.content{
+    margin-top: 50px;
+}
+
+.navbar a{
+    font-size: 1.15rem;
+    color: green;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+.header .icons{
+    font-size: 2.5rem;
+    color: black;
+    position: absolute;
+    right: 5%;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+label .close-icon{
+    font-size: 2.5rem;
+    color: black;
+    position: absolute;
+    right: 5%;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* @media  */
+/* break points
+480px--sm devices
+768px--md devices
+992px--lg devices
+1280px--xl devices */
+
+@media (max-width:768px){
+    
+    .header .icons{
+        display: flex;
+    }
+    
+    p{
+        font-size: 2rem;
+        line-height: 1.8;
+    }
+
+    .flex-container{
+        flex-wrap: wrap;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color:black;
+        text-align: center;
+        display: none;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0px;
+    }
+
+    #check{
+        display: none;
+    }
+
+    #check:checked~label .icons{
+        display: none;
+    }
+
+    #check:checked~label .close-icon{
+        display: flex;
+    }
+
+    #check:checked~.navbar{
+        display: block;
+    }
+
+    
+}
+
+@media (max-width:782px){
+    .header{
+        padding: 1.3rem 4%;
+    }
+}

@@ -1,0 +1,293 @@
+*{
+    font-family: "Playwrite AT", cursive;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+.logo{
+    width: 170px;
+    height: 90px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+
+}
+
+.list-items{
+    display: inline;
+    margin: 0px 20px;
+}
+
+.links{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.home-content{
+    margin:13% 0% 0% 8%;
+}
+
+#uname{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#lname{
+    color: red;
+    font-size: 50px;
+}
+
+.download{
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+
+}
+
+#user-detail{
+    margin-bottom: 25px;
+}
+
+.links:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.home-images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    top: 90px;
+}
+
+.group1{
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+
+#shape{
+    width: 450px;
+    margin-top: 50px;
+}
+
+.home-images:hover #shape{
+    bottom: 40px;
+}
+
+.home-images:hover #shape2{
+    left: 45%;
+}
+
+#about{
+    margin: 15% 8% 0 8%;
+}
+
+.section-head{
+    text-align: center;
+}
+
+.main-head{
+    font-size: 40px;
+}
+
+.sub-head{
+    font-size: 20px;
+    color:tomato;
+}
+
+.about-body{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#about-image>img{
+    width: 450px;
+}
+
+#about-content{
+    font-size: 18px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.information{
+    margin-top: 20px;
+}
+
+.info-box{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.info-box>span{
+    margin-left: 20px;
+}
+
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+
+.myskill{
+    width: 100%;
+}
+
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0px;
+    position: relative;
+}
+
+.bar-head, .bar-percent{
+    font-size: 1.1rem;
+    font-weight: 1500;
+}
+
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+}
+
+.html-bar{
+    width: 95%;
+    background-color: red;
+}
+
+.css-bar{
+    width: 90%;
+    background-color: red;
+}
+
+.java-bar{
+    width: 75%;
+    background-color: red;
+}
+
+.python-bar{
+    width: 85%;
+    background-color: red;
+}
+
+#contact{
+    margin: 8%;
+}
+
+.icon-collection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.icons{
+    height:50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color:rgb(0, 255, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+   
+
+}
+
+.icons:hover{
+    background-image: linear-gradient(to top left, red, yellow);
+    /* animation  */
+    animation: icon-rotate 2.5s;
+}
+
+.brand{
+    color: black;
+    font-size: 25px;
+}
+
+.brand:hover{
+    color: white;
+}
+
+@keyframes icon-rotate{
+    0% {
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+
+#copyright{
+    text-align: center;
+    font-weight: bold;
+    /* margin-top: -50px; */
+}
+
+.up-arrow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 40px;
+}
